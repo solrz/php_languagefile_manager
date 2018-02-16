@@ -81,7 +81,7 @@ def exportCSVtoPHP(csvfile='lang_dict.csv'):
         exporting.write("?>")
     
     def exportVarToLangPHP(vardicts,language='def'):
-        phpfile= 'Export/'+language+'.php'
+        phpfile= 'Export/'+language
         exporting = open(phpfile, 'w')
         exporting.write("<?php\nheader('content-type:text/html;charset=utf-8');\n$lang = array\n(\n")
         for var in vardicts:
